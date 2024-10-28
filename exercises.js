@@ -12,9 +12,9 @@
 
 // console.log(multipliedNums)
 
-const petsArray = ['Rover', 'Snuffles', 'Toto', 'Spot'];
+// const petsArray = ['Rover', 'Snuffles', 'Toto', 'Spot'];
 
-const [firstPet, secondPet] = petsArray;
+// const [firstPet, secondPet] = petsArray;
 
 // console.log(firstPet); // 'Rover'
 // console.log(secondPet); // 'Snuffles'
@@ -37,13 +37,13 @@ const [firstPet, secondPet] = petsArray;
 // console.log(pizzaToppings[0])
 // console.log(pizzaToppings[1])
 
-const person = {
-    name: 'Alex',
-    role: 'Software Engineer',
-  }
+// const person = {
+//     name: 'Alex',
+//     role: 'Software Engineer',
+//   }
   
-  // Object destructuring:
-  const { name, role } = person;
+//   // Object destructuring:
+//   const { name, role } = person;
   
 //   console.log(name) // 'Alex'
 //   console.log(role) // 'Software Engineer'
@@ -85,17 +85,54 @@ const person = {
 
 // Duplicate the following object and spread its values into a new variable `myCar`.
 
-const car = {
-    make: 'Audi',
-    model: 'q5',
-  };
+// const car = {
+//     make: 'Audi',
+//     model: 'q5',
+//   };
   
   // Change the `model` property of `myCar` to 'q7'. Log both objects.
   
   // Your code here
   
-  const clonedObject = { ...car }
+//   const clonedObject = { ...car }
 
-clonedObject.model = 'q7'
+// clonedObject.model = 'q7'
 
-console.log('Clone: ', clonedObject)
+// console.log('Clone: ', clonedObject)
+
+// const fruitInventory = {
+//     apples: 2,
+//     oranges: 4,
+//   };
+  
+//   const selectedFruit = 'apples'; // Variable as a dynamic key
+//   const selectedFruitCount = fruitInventory[selectedFruit];
+  
+//   console.log(selectedFruitCount); // 2
+  
+//   const fruitType = 'bananas'; // Variable as a dynamic key
+
+// const fruitInventory = {
+//   [fruitType]: 5,
+// };
+
+// console.log(fruitInventory); // { bananas: 5 }
+
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+
+// const userProfile = {
+//     userName: xokeesh,
+//     friends: 24,
+// }
+
+const propertyName = 'blocked'
+
+const blockedUsers = {
+    [propertyName]: 4,
+}
+
+console.log(blockedUsers)
