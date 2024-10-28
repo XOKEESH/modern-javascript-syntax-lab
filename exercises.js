@@ -54,14 +54,14 @@ const person = {
   
   // Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
 
-const car = {
-    make: 'Audi',
-    model: 'q5',
-  }
+// const car = {
+//     make: 'Audi',
+//     model: 'q5',
+//   }
   
-  // Your code here
+//   // Your code here
   
-const { make, model } = car
+// const { make, model } = car
 
 // console.log(make)
 // console.log(model)
@@ -77,8 +77,25 @@ const { make, model } = car
 // referenceArray.push(4) // Modifying referenceArray also modifies originalArray
 // console.log(originalArray) // [1, 2, 3, 4]
 
-const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies']
+// const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies']
 
-const controversialPizzaToppings = [...pizzaToppings]
+// const controversialPizzaToppings = [...pizzaToppings]
 
-console.log(controversialPizzaToppings)
+// console.log(controversialPizzaToppings)
+
+// Duplicate the following object and spread its values into a new variable `myCar`.
+
+const car = {
+    make: 'Audi',
+    model: 'q5',
+  };
+  
+  // Change the `model` property of `myCar` to 'q7'. Log both objects.
+  
+  // Your code here
+  
+  const clonedObject = { ...car }
+
+clonedObject.model = 'q7'
+
+console.log('Clone: ', clonedObject)
