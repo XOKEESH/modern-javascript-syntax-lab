@@ -1,6 +1,6 @@
 // Use `.map()` to iterate over the following array:
 
-const nums = [13, 87, 2, 89, 12, 4, 90, 63]
+// const nums = [13, 87, 2, 89, 12, 4, 90, 63]
 
 // Create a new array where each value is multiplied by 2 and log the new array.
 
@@ -25,11 +25,11 @@ const [firstPet, secondPet] = petsArray;
 
 // Given the following array, use destructuring to pull out the first and second values and place them into variables. Log both variables.
 
-const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies']
+// const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies']
 
 // // Your code here
 
-const [firstTopping, secondTopping] = pizzaToppings
+// const [firstTopping, secondTopping] = pizzaToppings
 
 // console.log(firstTopping)
 // console.log(secondTopping)
@@ -69,3 +69,16 @@ const { make, model } = car
 // console.log(car.make)
 // console.log(car.model)
 
+// const originalArray = [1, 2, 3];
+// const duplicateArray = [...originalArray];
+
+// console.log(duplicateArray); // [1, 2, 3]
+
+// referenceArray.push(4) // Modifying referenceArray also modifies originalArray
+// console.log(originalArray) // [1, 2, 3, 4]
+
+const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies']
+
+const controversialPizzaToppings = [...pizzaToppings]
+
+console.log(controversialPizzaToppings)
