@@ -182,20 +182,32 @@
 // let pizza = 'tasty'
 // console.log(pizza === 'tasty' ? 'yum' : 'yuck')
 
-const localLangConfig = null
+// const localLangConfig = null
 
-// a. Create a variable called LANG
-// b. Assign LANG the value of localLangConfig or 'en' as a default
-const LANG = localLangConfig || 'en';
+// // a. Create a variable called LANG
+// // b. Assign LANG the value of localLangConfig or 'en' as a default
+// const LANG = localLangConfig || 'en';
 
-// Log the result
-console.log('Language setting:', LANG);
+// // Log the result
+// console.log('Language setting:', LANG);
 
-const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it null
+// const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it null
 
-// a. Create a variable called USER_THEME
-// b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
-const USER_THEME = userSavedTheme || 'light';
+// // a. Create a variable called USER_THEME
+// // b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
+// const USER_THEME = userSavedTheme || 'light';
 
-// Log the result
-console.log('User theme setting:', USER_THEME);
+// // Log the result
+// console.log('User theme setting:', USER_THEME);
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+    name: 'Alice',
+  };
+  
+  let cat; // Your code here
+  
+//   console.log(cat);
+  console.log(cat?.age);
+  
